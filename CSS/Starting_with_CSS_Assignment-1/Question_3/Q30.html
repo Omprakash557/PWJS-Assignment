@@ -14,6 +14,13 @@
     .email{
         background-color: blue;
     }
+    .checkbox{
+        accent-color: green;
+    }
+    .gender{
+        accent-color: rgb(109, 10, 26)
+        ;
+    }
     .button{
         opacity: 0.5;
     }
@@ -42,16 +49,16 @@
     <label for="Age">Age:</label>
     <input type="Age" placeholder="Age" id="Age" value="25">
     <br>
-    <label for="Gender">Gender:</label>
-    <input type="radio" name="selected" id="Men" value="Men">
+    <label class="gender" for="Gender">Gender:</label>
+    <input class="gender" type="radio" name="selected" id="Men" value="Men">
     <label for="Men">Men</label>
-    <input type="radio" name="Selected" id="Female" value="Female">
+    <input class="gender" type="radio" name="Selected" id="Female" value="Female">
     <label for="Female">Female</label>
-    <input type="radio" name="Selected" id="Other" value="Others">
+    <input class="gender" type="radio" name="Selected" id="Other" value="Others">
     <label for="Others">Other</label>
     <br>
     <label for="option">Terms:
-    <input type="checkbox" name="Terms" id="option" >
+    <input class="checkbox" type="checkbox" name="Terms" id="option" >
     I Agree Terms & Condition
 </label>
     <label for="Terms & Condition"></label>
