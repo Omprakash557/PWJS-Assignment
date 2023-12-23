@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_1</title>
+    <link rel="stylesheet" href="./Q1.css">
+    <style>
+
+/* internal */
+
+        .internal{
+            background-color: aqua;
+            font-size: 1.5em;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: -1px -5px 3px blue;
+        
+        }
+/* internal_external_inline */
+
+        .internal_external_inline{
+            color: rgb(0, 255, 55); 
+            font-weight: bold;
+            background-color: rgb(232, 185, 153) ; 
+            opacity: 0.8; display: inline-block;
+            width: 30%;
+        
+        }
+/* internal_inline*/
+
+        .internal_inline{
+            color: rgb(255, 0, 179); 
+        }
+/* internal_ext*/
+
+        .internal_ext{
+            color: blue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+     <!-- Within these three ( Inline, Internal & External ) the priority order is first Inline, then Internal and last priority is given to external styles. This is the biggest advantage as we can override the global style property and define them locally -->
+</head>
+<body>
+   <!-- 1. Inline -->
+   <div style="background-color: rgb(120, 120, 199); text-decoration: underline;font-size: 1.5em;display: inline-block;">
+    <p>Lorem ipsum dolor sit amet.</p>
+   </div>
+
+   <!-- Internal -->
+   <div class="internal">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laudantium quaerat incidunt quas error amet explicabo doloremque in voluptatem asperiores.</p>
+   </div>
+
+   <!-- 3.external -->
+   <div class="external">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laudantium quaerat incidunt quas error amet explicabo doloremque in voluptatem asperiores.</p>
+   </div>
+   
+   <!-- Applying inline,internal, External together -->
+   
+   <div style="color: blue; font-weight: bold;background-color: rgb(194, 153, 232) ; opacity: 0.8; display: inline-block;width: 30%;" class="external_int_inline internal_external_inline">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laudantium quaerat incidunt quas error amet explicabo doloremque in voluptatem asperiores.</p>
+   </div>
+
+ <!-- Applying inline, Internal together -->
+
+   <div style="color: brown;" class="internal_inline">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laudantium quaerat incidunt quas error amet explicabo doloremque in voluptatem asperiores.</p>
+</div>
+
+
+ <!-- Applying internal, External together -->
+
+    <div class="external_internal internal_ext">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laudantium quaerat incidunt quas error amet explicabo doloremque in voluptatem asperiores.</p>
+    </div>
+</body>
+</html>

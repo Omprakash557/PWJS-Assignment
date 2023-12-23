@@ -1,0 +1,32 @@
+Write a short note on Tag and element with an example?
+Ans:
+
+Tags:
+
+HTML tags are the keywords on a web page that define how your web browser must format and display your web page. Almost all tags contain two parts, an opening, and a closing tag.
+
+Opening Tag and Closing tag is surrounded by the angle bracket (< >)
+
+For example, <html> is the opening tag and </html> is the closing tag.
+
+Title Tag:-
+The title tag <title> specifies the HTML page title, which is shown in the browser’s title bar. 
+
+Body Tag:-
+The body tag <body> is where you insert your web page’s content. 
+
+Paragraph Tag:-
+A paragraph tag <p> is used to define a paragraph on a web page.
+
+and etc..
+
+Element:
+
+Mostly Element is Made up of opening tag, Content and Closing tag.
+
+Element is used to dispaly any content like Heading, paragraph, list ect. on the web page in the Structured manner.
+
+For example, <h1> Most Popular Sports in India are: </h1>
+
+Here, <h1> and </h1> is a opening tag and Closing tag, Between this i.e
+"Most Popular Sports in India are:" is a content and all this together Makes an Element.
