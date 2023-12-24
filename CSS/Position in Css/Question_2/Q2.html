@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_2</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    table {
+        text-align:inherit;
+        width: 70%;
+        height: 300px;
+        margin: auto;
+        background-color: rgb(17, 72, 72);
+        color: blueviolet;
+    }
+    th{
+        color: rgb(233, 109, 109);
+        background-color: rgb(62, 16, 16);
+    }
+     table, td, th{
+        border: 1px solid black;
+        
+    }
+</style>
+<body>
+    <h1>Differemce Between Absolute & Relative</h1>
+   
+    <table >
+        <tr>
+            <th>Absolute</th>
+            <th>Relative</th>
+        </tr>
+        <tr>
+            <td>syntax
+                <br>
+                {
+                    position:absolute;
+                }
+            </td>
+            <td>syntax
+                <br>
+                {
+                    position:relative;
+                }</td>
+        </tr>
+        <tr>
+            <td>	The element is positioned relative to its first positioned (not static) ancestor element</td>
+            <td>	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position</td>
+        </tr>
+        <tr>
+            <td>This value creates a new stacking context when the value of z-index is not auto. The margins of absolutely positioned boxes do not collapse with other margins.</td>
+            <td>This value creates a new stacking context when the value of z-index is not auto. Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.</td>
+        </tr>
+        <tr>
+            <td>The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.</td>
+            <td>The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
